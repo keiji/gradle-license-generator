@@ -6,6 +6,7 @@ plugins {
     kotlin("plugin.serialization") version "2.3.20" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
     id("com.gradleup.nmcp.aggregation") version "1.4.4"
+    id("io.github.sgtsilvio.gradle.proguard") version "0.8.0" apply false
 }
 
 allprojects {
