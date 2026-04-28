@@ -43,3 +43,7 @@ val proguardJar = tasks.register<io.github.sgtsilvio.gradle.proguard.ProguardTas
     }
     rules.addAll(project.file("proguard-rules.pro").readLines())
 }
+
+tasks.assemble {
+    dependsOn(proguardJar)
+}
